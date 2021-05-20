@@ -31,11 +31,16 @@ body{
     box-shadow: none;
 }
 .logo{
-    font-family:var(--logo-tipo);
-    font-weight: 700;
-    font-size: 26px;
-    color: #000;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+     padding: 0;
+ }
+ .logo_icon{
+     width: 200px;
+     height: auto;
+ }
 .nav-item{
     margin-left: 10px;
 }
@@ -122,11 +127,24 @@ body{
 
 /* ========================== Media Queries */
 @media screen and (max-width: 992px){
+
+    /* ////// Desktop none - Mobile block */
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+
+    
     .navbar{
         margin-top: -1px;
     }
     .navbar-toggler{
         padding: 0;
+    }
+    .logo_icon {
+        width: 140px;
     }
     .about_container{
         height: auto;
@@ -145,11 +163,5 @@ body{
         margin-bottom: 1rem;
     }
 
-    /* ////// Desktop none - Mobile block */
-    .desktop{
-        display: none;
-    }
-    .mobile{
-        display: block;
-    }
+
 }

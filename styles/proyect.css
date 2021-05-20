@@ -40,11 +40,16 @@ body{
     box-shadow: none;
 }
 .logo{
-    font-family:var(--logo-tipo);
-    font-weight: 700;
-    font-size: 26px;
-    color: #000;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+     padding: 0;
+ }
+ .logo_icon{
+     width: 200px;
+     height: auto;
+ }
 .nav-item{
     margin-left: 10px;
 }
@@ -75,8 +80,9 @@ body{
 .pic{
     position: relative;
     height: 250px;
-    box-shadow: 3px 3px 4px lightgray;
+    box-shadow: 2px 2px 4px lightgray;
     cursor: pointer;
+    border-radius: 2px;
 }
 .img{
     width: 100%;
@@ -99,7 +105,7 @@ body{
 
 /*  //////////////// image before */
 .gallery_img1::before{
-    content: "Vivienda SG";
+    content: "Vivienda Lt10";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -115,11 +121,11 @@ body{
     z-index: 1;
 }
 .gallery_img2::before{
-    content: "Hotel Wyndham";
+    content: "Vivienda MM";
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-10%, -50%);
+    transform: translate(-12%, -50%);
     color: #fff;
     font-size: 22px;
     font-weight: bold;
@@ -131,7 +137,7 @@ body{
     z-index: 1;
 }
 .gallery_img3::before{
-    content: "Vivienda MM";
+    content: "Vivienda SG";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -147,7 +153,7 @@ body{
     z-index: 1;
 }
 .gallery_img4::before{
-    content: "Vivienda LT10";
+    content: "Hotel Wyndham";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -194,4 +200,26 @@ body{
     .mobile{
         display: block;
     }
+    .logo_icon {
+        width: 140px;
+    }
 }
+
+@media screen and (max-width: 768px){
+    .gallery_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "gallery1"
+        "gallery2"
+        "gallery3"
+        "gallery4"
+        ;
+    }
+}
+@media screen and (max-width: 320px){
+    .gallery_img1::before, .gallery_img2::before,.gallery_img3::before, .gallery_img4::before{
+        transform: translate(-25%, -50%);
+    }
+}
+
