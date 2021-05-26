@@ -69,7 +69,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin: 4rem 0 3rem;
 }
 .image_container{
     position: relative;
@@ -116,7 +116,12 @@ body{
     font-weight: 400;
 }
 
-
+/* ========== Footer */
+.about_copy-text{
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 1em;
+}
 
 
 
@@ -139,5 +144,13 @@ body{
     }
     .gallery_container{
         margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 500px){
+    .gallery_container{
+        margin: 2rem 0 0;
+    }
+    .about_copy-text{
+        font-size: .8em;
     }
 }
