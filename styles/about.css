@@ -156,6 +156,9 @@ body{
     .about_container{
         height: auto;
     }
+    .about_title{
+        color: red;
+    }
     .about_img{
         margin: 2rem 0;
         padding: 0;

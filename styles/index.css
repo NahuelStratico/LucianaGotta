@@ -29,12 +29,8 @@ body{
     width: 100%;
     height: 50px;
     padding: 0;
-    /* margin-top: -1px; */
     background: #ffffff78;
 }
-/* .navbar_container{
-    background: #fff;
-} */
 .navbar-toggler{
     border: none;
     font-size: 1rem;
@@ -61,6 +57,22 @@ body{
     font-family: var(--montserrat);
     font-weight: 400;
     color: #000 !important;
+}
+.dropdown-menu{
+    background: #fff;
+    margin-top: 4px;
+}
+.dropdown-menu:hover{
+    cursor: pointer;
+}
+.dropdown-item{
+    font-family: var(--montserrat);
+    font-weight: 400;
+    color: #000;
+}
+.dropdown-item:hover{
+    background: none;
+    font-weight: 500;
 }
 
 /* ///////////////////////// Carousel */
@@ -205,7 +217,106 @@ body{
     opacity: 0.9;
 }
 
-
+/* =================== Carousel home Mobile */
+.overlay-image0-mobile{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url('../img/carousel/mobile/4.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.overlay-image1-mobile{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url('../img/carousel/mobile/5.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.overlay-image2-mobile{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url('../img/carousel/mobile/6.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.overlay-image3-mobile{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url('../img/carousel/mobile/10.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.overlay-image4-mobile{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url('../img/carousel/mobile/11.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.overlay-image5-mobile{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url('../img/carousel/mobile/12.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.overlay-image6-mobile{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url('../img/carousel/mobile/14.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.overlay-image7-mobile{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url('../img/carousel/mobile/23.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.overlay-image8-mobile{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url('../img/carousel/mobile/28.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
 
 
 
@@ -215,14 +326,36 @@ body{
 @media screen and (max-width: 992px){
 
     /* ////// Desktop none - Mobile block */
+    /* .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    } */
+    .navbar_container{
+        padding: 0;
+    }
+    .navbar-collapse{
+        margin-top: 15px;
+        background: #ffffff78;
+    }
+    .logo{
+        margin-left: 6px;
+    }
+    .logo_icon {
+        width: 140px;
+    }
+    .dropdown-menu{
+        width: 20%;
+    }
+    
+}
+
+@media screen and (max-width: 460px){
     .desktop{
         display: none;
     }
     .mobile{
         display: block;
-    }
-
-    .logo_icon {
-        width: 140px;
     }
 }
