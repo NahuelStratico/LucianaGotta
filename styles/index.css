@@ -16,12 +16,6 @@ body{
 .mobile{
     display: none;
 }
-.nav-desktop{
-    display: block;
-}
-.nav-mobile{
-    display: none !important;
-}
 
 
 
