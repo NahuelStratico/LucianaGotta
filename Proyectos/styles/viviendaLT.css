@@ -107,6 +107,22 @@ body{
 .col_gallery:hover{
     filter: brightness(80%);
 }
+.modal-dialog{
+    max-width: 90%;
+}
+.modal-content{
+    position: relative;
+}
+.modal-header{
+    position: fixed;
+    top: 0;
+    right: 20px;
+    border: 0;
+}
+.btn-close{
+    color: #fff;
+}
+
 
 
 
