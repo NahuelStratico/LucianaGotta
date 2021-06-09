@@ -103,6 +103,8 @@ body{
 /* ========================== Galery Vivienda LT10 */
 .col_gallery{
     transition: .5s ease-in-out;
+    display: flex;
+    align-items: center;
 }
 .col_gallery:hover{
     filter: brightness(80%);
