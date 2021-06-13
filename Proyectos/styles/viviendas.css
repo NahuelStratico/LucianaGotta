@@ -105,12 +105,17 @@ body{
     transition: .5s ease-in-out;
     display: flex;
     align-items: center;
+    padding: 0 5px;
+    margin-bottom: 10px;
 }
 .col_gallery:hover{
     filter: brightness(80%);
 }
+.modal{
+    background: rgba(0,0,0,.5);
+}
 .modal-dialog{
-    max-width: 90%;
+    max-width: 100vh;
 }
 .modal-content{
     position: relative;
@@ -121,9 +126,20 @@ body{
     right: 20px;
     border: 0;
 }
+.modal-body{
+    text-align: center;
+}
+
 .btn-close{
     color: #fff;
 }
+.img_gallery{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 
 
 
@@ -155,7 +171,7 @@ body{
 
 
 /* =================================================== Media Queries */
-@media screen and (max-width: 992px){
+@media only screen and (max-width: 992px){
 
     /* ////// Desktop none - Mobile block */
     .desktop{
@@ -164,10 +180,14 @@ body{
     .mobile{
         display: block;
     }
+    .img_gallery{
+        height: 100%;
+    }
 }
 
-@media screen and (max-width: 500px){
+@media only screen and (max-width: 500px){
     .about_copy-text{
         font-size: .8em;
     }
+
 }
