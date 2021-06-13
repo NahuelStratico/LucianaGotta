@@ -1,0 +1,194 @@
+:root{
+    --logo-tipo:'Poppins', sans-serif;
+    --montserrat:'Montserrat', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* ////// Desktop none - Mobile block */
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+
+
+
+/* /////////////////////// Navbar */
+.header{
+    width: 100%;
+}
+.navbar{
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    background: #ffffff78;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1rem;
+}
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+.logo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+    padding: 0;
+}
+.logo_icon{
+    width: 200px;
+    height: auto;
+}
+.nav-item{
+    margin-left: 10px;
+}
+.nav-link{
+    font-family: var(--montserrat);
+    font-weight: 400;
+    color: #000 !important;
+}
+.dropdown-menu{
+    background: #fff;
+    margin-top: 4px;
+}
+.dropdown-menu:hover{
+    cursor: pointer;
+}
+.dropdown-item{
+    font-family: var(--montserrat);
+    font-weight: 400;
+    color: #000;
+}
+.dropdown-item:hover{
+    background: none;
+    font-weight: 500;
+}
+
+
+/* ===========================  Ficha técnica */
+
+.container_lt{
+    margin-top: 3rem;
+}
+.ficha_title{
+    font-family: var(--montserrat);
+    font-size: 2em;
+    font-weight: 400;
+}
+.col_ficha p{
+    font-family: var(--montserrat);
+    font-size: .9em;
+    font-weight: 400;
+    margin-bottom: .4rem;
+}
+.col_ficha hr{
+    margin: 2rem 0;
+}
+
+
+/* ========================== Galery Vivienda LT10 */
+.col_gallery{
+    transition: .5s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+.col_gallery:hover{
+    filter: brightness(80%);
+}
+.modal{
+    background: rgba(0,0,0,.5);
+}
+.modal-dialog{
+    max-width: 100vh;
+}
+.modal-content{
+    position: relative;
+}
+.modal-header{
+    position: fixed;
+    top: 0;
+    right: 20px;
+    border: 0;
+}
+.modal-body{
+    text-align: center;
+}
+
+.btn-close{
+    color: #fff;
+}
+.img_gallery{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////////// Footer */
+/* .footer{
+    margin-top: 4rem;
+} */
+.about_copy{
+    width: 100%;
+    margin: 0;
+}
+
+.about_copy-text{
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+/* =================================================== Media Queries */
+@media only screen and (max-width: 992px){
+
+    /* ////// Desktop none - Mobile block */
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .img_gallery{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .about_copy-text{
+        font-size: .8em;
+    }
+
+}
