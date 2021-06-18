@@ -98,7 +98,13 @@ body{
 .col_ficha hr{
     margin: 2rem 0;
 }
-
+.memoria{
+    font-family: var(--montserrat);
+    font-size: .9em;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.7rem;
+}
 
 /* ========================== Galery Vivienda LT10 */
 .col_gallery{
@@ -182,6 +188,12 @@ body{
     }
     .img_gallery{
         height: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .memoria{
+        margin-top: 2rem;
     }
 }
 
