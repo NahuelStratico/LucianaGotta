@@ -71,6 +71,7 @@ body{
 
 .about_container{
     height: 100vh;
+    margin-top: 2rem;
 }
 .about_row{
     height: 100%;
@@ -145,6 +146,11 @@ body{
 
 
 /* =================================================== Media Queries */
+@media only screen and (min-width: 768px){
+    .navbar_container{
+        padding: 0 3rem;
+    }
+}
 @media screen and (max-width: 992px){
 
     /* ////// Desktop none - Mobile block */
@@ -154,7 +160,6 @@ body{
     .mobile{
         display: block;
     }
-
     
     .navbar{
         margin-top: -1px;

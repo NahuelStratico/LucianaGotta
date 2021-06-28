@@ -27,6 +27,7 @@ body{
     width: 100%;
     height: 100%;
     padding: 0;
+
 }
 .navbar_container{
     padding-top: 5px;
@@ -68,7 +69,11 @@ body{
     font-weight: 400 !important;
 }
 
+
 /* ==================  Gallery Press */
+.container_section{
+    margin-top: 6rem;
+}
 .gallery_container{
     display: flex;
     flex-wrap: wrap;
@@ -134,7 +139,11 @@ body{
 
 
 /* =========================================== Media Queries ============================= */
-
+@media only screen and (min-width: 768px){
+    .navbar_container{
+        padding: 0 3rem;
+    }
+}
 @media screen and (max-width: 992px){
 
     /* ////// Desktop none - Mobile block */
@@ -150,6 +159,11 @@ body{
     }
     .gallery_container{
         margin-top: 2rem;
+    }
+    .navbar_container{
+        box-shadow: 0px 3px 7px 0px rgb(198 198 198 / 75%);
+        -webkit-box-shadow: 0px 3px 7px 0px rgba(198,198,198,0.75);
+        -moz-box-shadow: 0px 3px 7px 0px rgba(198,198,198,0.75);
     }
 }
 
