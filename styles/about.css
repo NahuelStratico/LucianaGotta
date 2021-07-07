@@ -102,6 +102,9 @@ body{
     justify-content: space-between;
     margin-top: 40px;
 }
+.enlace_button{
+    text-decoration: none;
+}
 .button_container-text{
     width: 150px;
     font-family: var(--montserrat);
