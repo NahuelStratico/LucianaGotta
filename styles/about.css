@@ -104,6 +104,8 @@ body{
 }
 .enlace_button{
     text-decoration: none;
+    display: inline-block;
+    width: 100%;
 }
 .button_container-text{
     width: 150px;
