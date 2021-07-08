@@ -69,6 +69,16 @@ body{
     font-weight: 400;
     color: #000 !important;
 }
+
+/* Hover efect */
+.nav-link:hover{
+    font-weight: 500;
+}
+.active{
+    font-weight: 500;
+}
+
+
 .dropdown-menu{
     background: #fff;
     margin-top: 4px;
