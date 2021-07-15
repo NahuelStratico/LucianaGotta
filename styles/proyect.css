@@ -104,6 +104,11 @@ body{
     cursor: pointer;
     border: 2px;
     margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 
 }
 .image_img{
@@ -140,11 +145,21 @@ body{
 .image_overlay:hover > *{
     transform: translateY(0);
 }
-.image_title{
+.image_title, .title_newproyect{
     font-size: 1.5em;
     font-weight: 400;
+    color: #000;
+    font-family: var(--montserrat);
 }
-
+.icon_newproyect{
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+}
+.newproyect{
+    background-color: rgb(236, 236, 236);
+}
 
 /* ========== Footer */
 .about_copy-text{
