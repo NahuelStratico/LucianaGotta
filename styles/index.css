@@ -3,21 +3,22 @@
     --montserrat:'Montserrat', sans-serif;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: #000;
+}
 
-/* ////// Desktop none - Mobile block */
+/* Carousel version desktop  */
 .desktop{
     display: block;
 }
 .mobile{
     display: none;
 }
-
-
 
 /* /////////////////////// Navbar */
 .header{
@@ -81,265 +82,30 @@ body{
     font-weight: 500;
 }
 
-/* ///////////////////////// Carousel */
-.carousel {
-    position: relative;
-    width: 100vw;
+/* ========== Carousel */
+.intro{
     height: 100vh;
-    overflow: hidden;
-}
-.carousel-inner{
     position: relative;
-    height: 100%;
+}
+.slidershow-img, .slidershow_img-mobile{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-} 
-.carousel-item{
-    position: relative;
     height: 100%;
-    width: 100%;
-    background: #000;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
 }
 
-/* ========= Corousel home desktop */
-.overlay-image0{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/1.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
+.image{
+    object-position: bottom;
 }
-.overlay-image1{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/2.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-.overlay-image2{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/3.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-.overlay-image3{ 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/4.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-/* .overlay-image4{ 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/5.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-} */
-.overlay-image5{ 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/6.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-.overlay-image6{ 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/6b.jpg');
-    background-size: cover;
-    background-position: bottom;
-    opacity: 0.9;
-}
-/* .overlay-image7{ 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/8.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-.overlay-image8{ 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/9.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-.overlay-image9{ 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/10.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-.overlay-image10{ 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/11.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-} */
-
-
-
-/* =================== Carousel home Mobile */
-.overlay-image0-mobile{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/mobile/4.jpg');
-    background-size: cover;
-    background-position: left center;
-    opacity: 0.9;
-}
-.overlay-image1-mobile{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/mobile/5.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-.overlay-image2-mobile{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/mobile/6.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-.overlay-image3-mobile{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/mobile/10.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-.overlay-image4-mobile{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/mobile/11.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-.overlay-image5-mobile{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/mobile/12.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-.overlay-image6-mobile{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/mobile/14.jpg');
-    background-size: cover;
-    background-position: center top;
-    opacity: 0.9;
-}
-.overlay-image7-mobile{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/mobile/23.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-.overlay-image8-mobile{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: url('../img/carousel/mobile/28.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-
-
 
 
 /* =========================================== Media Queries ============================= */
-
 @media screen and (max-width: 992px){
-
-    /* ////// nav none - navMobile block */
-    .nav-desktop{
-        display: none !important;
-    }
-    .nav-mobile{
-        display: block !important;
-    }
 
     .navbar_container{
         padding: 0;
