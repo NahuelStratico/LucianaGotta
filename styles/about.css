@@ -252,6 +252,9 @@ text-decoration: none;
         width: 100%;
         margin-bottom: 1rem;
     }
+    .button_container-iconContainer{
+        height: 60px;
+    }
     .blue_text{
         font-size: .7em;
     }
