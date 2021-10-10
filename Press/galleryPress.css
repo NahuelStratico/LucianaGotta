@@ -97,11 +97,16 @@ body{
 
 /* ===========================  Ficha técnica */
 .container, .container-md, .container-sm {
-    max-width: 100%;
+    width: 100%;
 }
 
+
 .container_lt{
-    margin-top: 3rem;
+    margin-top: 4rem;
+}
+.breadcrumb a{
+    text-decoration: none;
+    font-weight: 500;
 }
 .ficha_title{
     font-family: var(--montserrat);
