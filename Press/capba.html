@@ -103,6 +103,8 @@
 
         </div>
 
+        <!-- Scroll to top -->
+        <a href="#" class="go-top"><i class="fas fa-chevron-up"></i></a>
 
         <!-- Footer -->
         <div class="row footer">
@@ -128,6 +130,28 @@
     </div>
 
 
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Scroll to top -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 100);
+			})
+		});
+    </script>
      <!-- Jquery para lightbox -->
      <script src="../js/lightbox-plus-jquery.min.js"></script>
      <!-- Bootstrap JS -->

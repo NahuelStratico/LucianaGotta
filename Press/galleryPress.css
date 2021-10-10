@@ -164,6 +164,28 @@ body{
     object-position: center;
 }
 
+/* Scroll to top */
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+    margin: 0 auto;
+}
+
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+    color: #F3F1F5;
+}
+
+.go-top i{
+    font-size: 2em;
+}
 
 
 /* /////////////////////////// Footer */
