@@ -173,7 +173,32 @@ body{
     font-size: 1em;
 }
 
-
+/*  copy blue producciones */
+.blue_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.blue_container a{
+text-decoration: none;
+}
+.blue_text{
+    background: #F3F1F5;
+    color: #7F7C82;
+    padding: 5px 10px;
+    border-radius: 10px 10px 0 0;
+    font-weight: 600;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.13),
+    -5px -5px 5px 0px rgba(255, 255, 255, 0.68);
+    transition: all 0.2s ease-in-out ;
+    transition: all 0.2s ease-in-out ;
+}
+.blue_text:hover{
+    background: #091353;
+    color: #B2F9FC;
+}
 
 
 /* =================================================== Media Queries */
@@ -194,6 +219,9 @@ body{
     .img_gallery{
         height: 100%;
         width: 100%;
+    }
+    .blue_text{
+        font-size: .7em;
     }
 }
 

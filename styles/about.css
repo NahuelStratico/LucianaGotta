@@ -143,6 +143,9 @@ body{
 
 
 /* /////////////////////////// Footer */
+.footer{
+    position: relative;
+}
 .about_copy{
     width: 100%;
     margin: 0;
@@ -151,13 +154,39 @@ body{
 .about_copy-text{
     font-family: var(--montserrat);
     font-weight: 500;
-    font-size: 1em;
+    font-size: .8em;
+    line-height: 1.6em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #333;
 }
 
 
-
-
-
+/*  copy blue producciones */
+.blue_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.blue_container a{
+text-decoration: none;
+}
+.blue_text{
+    background: #F3F1F5;
+    color: #7F7C82;
+    padding: 5px 10px;
+    border-radius: 10px 10px 0 0;
+    font-weight: 600;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.13),
+    -5px -5px 5px 0px rgba(255, 255, 255, 0.68);
+    transition: all 0.2s ease-in-out ;
+}
+.blue_text:hover{
+    background: #091353;
+    color: #B2F9FC;
+}
 
 
 
@@ -202,11 +231,15 @@ body{
         width: 100%;
         margin-bottom: 1rem;
     }
+    .blue_text{
+        font-size: .7em;
+    }
 
+  
 
 }
 @media screen and (max-width: 500px){
     .about_copy-text{
-        font-size: .8em;
+        font-size: .6em;
     }
 }
