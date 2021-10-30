@@ -101,7 +101,7 @@ body{
 }
 .breadcrumb a{
     text-decoration: none;
-    /* color: #333; */
+    color: #FF0000;
     font-weight: 500;
 }
 .ficha_title{

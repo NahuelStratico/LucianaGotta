@@ -159,7 +159,7 @@ body{
 .about_copy-text{
     font-family: var(--montserrat);
     font-weight: 500;
-    font-size: .8em;
+    font-size: .7em;
     line-height: 1.6em;
     letter-spacing: .2em;
     text-transform: uppercase;
